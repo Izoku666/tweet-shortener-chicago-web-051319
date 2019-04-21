@@ -17,17 +17,20 @@ end
 def word_substituter(tweet)
   nt = tweet.split(" ")
   
+  index = 0
   nt.each do |i|
     if dictionary.include?(i)
       puts "REPLACE #{i}"
       dictionary.each do |word, replacement|
         if i == word
           puts "#{i} should be replaced with #{replacement}"
-          i = replacement
+            i = replacement
           next
         end
       end
     end
+    
+    i += 1
   end
     
   return nt
