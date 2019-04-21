@@ -68,11 +68,11 @@ def selective_tweet_shortener(tweet)
 end
 
 def shortened_tweet_truncator(tweet)
-  tweet = word_substituter(tweet)
-  tl = tweet.length
+  nt = word_substituter(tweet)
+  tl = nt.length
   puts tl
   if tl < 140
-    puts "Trunicate this one: #{tweet} (#{tl})"
+    puts "Trunicate this one: #{nt} (#{tl})"
   else
     return tweet
   end
