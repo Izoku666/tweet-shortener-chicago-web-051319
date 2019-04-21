@@ -43,7 +43,6 @@ def word_substituter(tweet)
     end
   end
   
-  puts tweet
   return tweet
 end
 
