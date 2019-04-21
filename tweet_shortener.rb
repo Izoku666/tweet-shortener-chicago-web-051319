@@ -69,6 +69,6 @@ end
 
 def shortened_tweet_truncator(tweet)
   tl = tweet.length
-  
+  if tweet 
 end
 
