@@ -18,7 +18,9 @@ def word_substituter(tweet)
   nt = tweet.split(" ")
   
   nt.each do |i|
-    i = "REPLACEMENT"
+    if dictionary.include?(i)
+      puts "REPLACE #{i}"
+    end
   end
     
   return nt
