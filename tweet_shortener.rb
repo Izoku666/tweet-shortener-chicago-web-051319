@@ -33,7 +33,13 @@ def word_substituter(tweet)
     index += 1
   end
     
-  return nt
+  tweet = ""
+  nt.each do |i|
+    tweet += "#{i} "
+  end
+  
+    
+  return tweet
 end
 
 def bulk_tweet_shortener(tweet)
