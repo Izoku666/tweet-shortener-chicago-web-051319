@@ -75,6 +75,6 @@ def shortened_tweet_truncator(tweet)
     nt = "#{nt[0..140]}..."
   end
   
-  return tweet
+  return nt
 end
 
