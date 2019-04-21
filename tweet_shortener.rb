@@ -20,10 +20,10 @@ def word_substituter(tweet)
   index = 0
   nt.each do |i|
     if dictionary.include?(i)
-      puts "REPLACE #{i}"
+     # puts "REPLACE #{i}"
       dictionary.each do |word, replacement|
         if i == word
-          puts "#{i} should be replaced with #{replacement}"
+      #    puts "#{i} should be replaced with #{replacement}"
             nt[index] = replacement
           next
         end
