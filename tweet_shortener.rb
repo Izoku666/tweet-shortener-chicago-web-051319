@@ -72,6 +72,7 @@ def shortened_tweet_truncator(tweet)
   tl = tweet.length
   if tl < 140
     puts tweet
+    puts tl
   else
     puts "Nothing to see here"
   end
