@@ -68,14 +68,14 @@ def selective_tweet_shortener(tweet)
 end
 
 def shortened_tweet_truncator(tweet)
-  nt = word_substituter(tweet)
+  tweet = word_substituter(tweet)
   tl = tweet.length
   if tl < 140
-    puts nt
+    puts tweet
   else
     puts "Nothing to see here"
   end
   
-  return nt
+  return tweet
 end
 
