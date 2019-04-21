@@ -71,8 +71,9 @@ def shortened_tweet_truncator(tweet)
   nt = word_substituter(tweet)
   tl = tweet.length
   if tl < 140
-    nt = "#{nt[0..137]}..."
     puts nt
+  else
+    puts "Nothing to see here"
   end
   
   return nt
