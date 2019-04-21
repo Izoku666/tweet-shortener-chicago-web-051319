@@ -36,9 +36,9 @@ def word_substituter(tweet)
   tweet = ""
   index = 0
   nt.each do |i|
-    i += 1
+    index += 1
     tweet += "#{i}"
-    if i != nt.length - 1
+    if index != nt.length - 1
       tweet += " "
     end
   end
