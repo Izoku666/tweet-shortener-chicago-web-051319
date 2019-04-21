@@ -71,7 +71,7 @@ def shortened_tweet_truncator(tweet)
   tweet = word_substituter(tweet)
   tl = tweet.length
   if tl < 140
-    puts tweet
+    #puts tweet
     puts tl
   else
     puts "Nothing to see here"
