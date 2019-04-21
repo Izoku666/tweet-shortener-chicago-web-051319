@@ -72,7 +72,7 @@ def shortened_tweet_truncator(tweet)
   tl = tweet.length
   puts tl
   if tl < 140
-    puts "Trunicate this one: #{tweet} (#{tweet.length})"
+    puts "Trunicate this one: #{tweet} (#{tl})"
   else
     return tweet
   end
