@@ -23,6 +23,8 @@ def word_substituter(tweet)
       dictionary.each do |word, replacement|
         if i == word
           puts "#{i} should be replaced with #{replacement}"
+          i = replacement
+          next
         end
       end
     end
