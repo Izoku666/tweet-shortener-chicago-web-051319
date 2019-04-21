@@ -73,6 +73,8 @@ def shortened_tweet_truncator(tweet)
   if tl < 140
     #puts tweet
     #puts tl
+    tweet = tweet[0..140]
+    puts tweet
   else
     puts "Nothing to see here"
   end
